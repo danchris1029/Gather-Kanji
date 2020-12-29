@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(request,sender,sendRequest){
     window.count = request.count
-    window.matches = request.matches
+    window.kanjiList = request.kanjiList
 })
 
 chrome.browserAction.onClicked.addListener(function (tab){
